@@ -1,0 +1,44 @@
+#container-form-item-edit {
+    padding: 20px;
+    display: block;
+    height: 100vh;
+}
+
+#container-form-item-edit > form {
+    width: 80%;
+    height: 100vh;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+#container-form-item-edit > h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container-form-item-edit > input,
+#container-form-item-edit > select {
+    width: 100%;
+    padding: 15px;
+    /* Modificado para hacerlo más grande */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#container-form-item-edit > button {
+    width: 100%;
+    padding: 15px;
+    /* Modificado para hacerlo más grande */
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#container-form-item-edit button:hover {
+    background-color: var(--accent-color);
+}

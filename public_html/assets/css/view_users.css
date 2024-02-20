@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f8f8f8;
+    --accent-color: #d60a0a;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
+/* Estilos generales */
+.workers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+}
+
+.search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 70px;
+    background-color: #ffff;
+}
+.input-search{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #00000071;
+    text-align:start;
+}
+#submit-search{
+    width: 100px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#header-actions {
+    display: flex;
+    align-self: start;
+    margin: 20px 0;
+}
+#header-actions > a{
+    margin: 0 10px;
+}
+.users {
+    width: 100%;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+thead > tr > th{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 50px;
+    margin-right: 5px;
+}
+tbody > tr{
+    border-bottom: 1px solid #00000071;
+}
+tbody > tr > td{
+    padding: 8px;
+    text-align: center;
+    height: 60px;
+    margin-right: 5px;
+    border-left: 1px solid #00000071;
+    border-right: 1px solid #00000071;
+}
+
+/* Estilos de los botones */
+button {
+    width: 100px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.borrar{
+    background-color: var(--accent-color);
+}
+button:hover {
+    transform: scale(1);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 800px) {
+
+    html {
+        overflow: visible;
+    }
+
+    .body {
+        overflow: visible;
+    }
+
+    .perfil {
+        display: none;
+    }
+
+    .container-content {
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow-y: visible;
+        padding: 10px;
+    }
+    .workers {
+        width: 100%;
+    }
+
+    #header-actions,
+    .users {
+        margin-bottom: 20px;
+    }
+
+    table {
+        margin: 0;
+    }
+
+    th,
+    td {
+        margin: 0;
+    }
+}

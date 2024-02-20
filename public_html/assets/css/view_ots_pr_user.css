@@ -1,0 +1,108 @@
+/*Inicio css de cuerpo*/
+.info-perfil{
+    width: 90%;
+    height: 10%;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+}
+.ot-permanent{
+    width: 100%;
+    max-height: 80vh;
+    padding: 10px; 
+    display: block;
+    overflow-y: scroll;
+}
+.ot-permanent > h1{
+    text-align: center;
+    font-size: 30px;
+    color: #007bff;
+}
+.ot-worker{
+    width: 80%;
+    height: 190px;
+    display: flex;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0 0 12px var(--shadow-color)
+}
+.container-photo-user{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+}
+.container-photo-user > img{
+    width: 100%;
+    height: 100%;
+}
+.info-ot{
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+.info-ot > h1{
+    font-size: 30px;
+    color: #007bff;
+}
+.info-ot > p{
+    color: #2c3e50; /* Un tono oscuro de azul */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bdc3c7; /* Una línea debajo del título */
+    padding-bottom: 5px;
+}
+.btn-actions{
+    width: 20%;
+    height: 100%;
+    display: block;
+}
+.url{
+    width: 100%;
+    height: 100%;
+}
+.url > button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.url > button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #000;
+}
+@media (max-width:800px){
+    .ot-worker{
+        display: block;
+        width: 80%;
+        height: auto;
+    }
+    .container-photo-user{
+        width: 100%;
+        height: 300px;
+    }
+    .container-photo-user > img{
+        width: 100%;
+        height: 100%;
+    }
+    .info-ot{
+        width: 100%;
+        height: 150px;
+    }
+    .btn-actions{
+        width: 100%;
+        height: 50px;
+    }
+    .url{
+        width: 100%;
+        height: 100%;
+    }
+    .url > button{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*Fin css de cuerpo*/
